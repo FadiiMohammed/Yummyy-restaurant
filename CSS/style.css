@@ -1,0 +1,80 @@
+body {
+  background-color: #0d0d0d;
+}
+#searches ::placeholder {
+  color: white !important;
+  opacity: 0.7 !important;
+}
+
+#searches :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+#searches ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+i,
+li,
+.col-md-3,
+a {
+  cursor: pointer;
+}
+
+input {
+  color: white;
+}
+
+/******************* Spinner Style *********************/
+.loader {
+  position: fixed;
+  z-index: 9999;
+  background-color: #0d0d0d;
+  display: flex;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*************** Home Page Style  ******************/
+#categories,
+#areas,
+#searches,
+#details,
+#ingredients,
+#contactUs {
+  display: none;
+}
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  transition: 0.5s;
+}
+.meal:hover .meal-layer {
+  transform: translateY(-100%);
+}
+.category:hover .meal-layer {
+  transform: translateY(-100%);
+}
+.side-nav-menu {
+  z-index: 99;
+}
+.nav-tab {
+  background-color: #0d0d0d;
+}
+.links li {
+  padding: 0.5rem 0;
+  position: relative;
+  bottom: -100px;
+}
+.logo {
+  width: 50px;
+}
